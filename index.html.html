@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Suhani Sharma</title>
+
+  <!-- FONT: Google Font chosen to reflect a clean, professional theme -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet"/>
+
+  <style>
+
+    /* =============================================
+       COLOR PALETTE — consistent colors site-wide
+       ============================================= */
+    :root {
+      --blue:       #1a3c6e;
+      --lightblue:  #4a6cf7;
+      --bg:         #f4f6ff;
+      --white:      #ffffff;
+      --text:       #333333;
+      --muted:      #666666;
+    }
+
+    /* =============================================
+       ELEMENT SELECTORS — base styles
+       ============================================= */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    h1 {
+      font-size: 36px;
+      color: var(--white);
+    }
+
+    h2 {
+      font-size: 24px;
+      color: var(--blue);
+      margin-bottom: 12px;
+      border-bottom: 2px solid var(--lightblue);
+      padding-bottom: 6px;
+    }
+
+    p {
+      font-size: 15px;
+      color: var(--text);
+      margin-bottom: 8px;
+    }
+
+    ul {
+      font-size: 15px;
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 6px;
+      color: var(--text);
+    }
+
+    a {
+      color: var(--lightblue);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* =============================================
+       ID SELECTOR — #navbar
+       ============================================= */
+    #navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background-color: var(--blue);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 14px 40px;
+      z-index: 100;
+    }
+
+    #navbar .logo {
+      color: var(--white);
+      font-size: 18px;
+      font-weight: 700;
+    }
+
+    #navbar ul {
+      list-style: none;
+      display: flex;
+      gap: 28px;
+      padding-left: 0;
+    }
+
+    #navbar ul li a {
+      color: var(--white);
+      font-size: 14px;
+    }
+
+    #navbar ul li a:hover {
+      color: #a8c0ff;
+      text-decoration: none;
+    }
+
+    /* =============================================
+       CLASS SELECTOR — .hero
+       ============================================= */
+    .hero {
+      background-color: var(--blue);
+      color: var(--white);
+      text-align: center;
+      padding: 100px 20px 60px;
+    }
+
+    .hero p {
+      color: #c0d0ff;
+      font-size: 16px;
+      margin-top: 8px;
+    }
+
+    /* =============================================
+       CLASS SELECTOR — .section
+       ============================================= */
+    .section {
+      background-color: var(--white);
+      max-width: 750px;
+      margin: 30px auto;
+      padding: 36px 40px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.07);
+    }
+
+    /* =============================================
+       CLASS SELECTOR — .edu-item
+       ============================================= */
+    .edu-item {
+      margin-bottom: 16px;
+      padding-left: 12px;
+      border-left: 3px solid var(--lightblue);
+    }
+
+    .edu-item .school {
+      font-weight: 600;
+      color: var(--blue);
+    }
+
+    .edu-item .detail {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    /* =============================================
+       FOOTER
+       ============================================= */
+    footer {
+      text-align: center;
+      padding: 24px;
+      background-color: var(--blue);
+      color: #a0b0d0;
+      font-size: 13px;
+      margin-top: 20px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- NAVIGATION BAR -->
+  <nav id="navbar">
+    <div class="logo">Suhani Sharma</div>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#education">Education</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <div class="hero">
+    <h1>Suhani Sharma</h1>
+    <p>BBA Student &nbsp;|&nbsp; IIM Bangalore &nbsp;|&nbsp; Digital Business & Entrepreneurship</p>
+  </div>
+
+  <!-- ABOUT -->
+  <div class="section" id="about">
+    <h2>About Me</h2>
+    <p>
+      Hi! I am Suhani Sharma, a BBA student at IIM Bangalore studying
+      Digital Business and Entrepreneurship. I enjoy marketing, learning
+      web development, and exploring new ideas.
+    </p>
+  </div>
+
+  <!-- SKILLS -->
+  <div class="section" id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>Marketing</li>
+      <li>Finance</li>
+      <li>Communication</li>
+      <li>HTML</li>
+      <li>CSS</li>
+    </ul>
+  </div>
+
+  <!-- EDUCATION -->
+  <div class="section" id="education">
+    <h2>Education</h2>
+
+    <div class="edu-item">
+      <p class="school">IIM Bangalore</p>
+      <p class="detail">BBA — Digital Business & Entrepreneurship &nbsp;|&nbsp; Currently Pursuing</p>
+    </div>
+
+    <div class="edu-item">
+      <p class="school">Mount Litera Zee School</p>
+      <p class="detail">Class 12th, CBSE &nbsp;|&nbsp; 95% overall &nbsp;|&nbsp; 91% in core subjects</p>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>Made by Suhani Sharma &nbsp;|&nbsp; IIM Bangalore &nbsp;|&nbsp; 2026</p>
+  </footer>
+
+</body>
+</html>
